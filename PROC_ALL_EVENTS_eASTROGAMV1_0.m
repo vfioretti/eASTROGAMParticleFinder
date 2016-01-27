@@ -8,7 +8,7 @@ clc
 addpath /home/astrogam/KALMAN-FILTER/MatlabParticleFinder/2D/Core
 
 % Input file
-in_fname = '/home/astrogam/G4_Projects/ASTROGAM/BoGEMMS-OUTPUT/eASTROGAMV1.0/Point/theta30/PixelRepli/ASTROMEV/MONO/100MeV/10000ph/onlyCAL/15keV/eAST201010101_CLUSTER_10000ph_Point_MONO_UNI_100MeV_30_225.dat';
+in_fname = '/home/astrogam/G4_Projects/eASTROGAM/BoGEMMS-OUTPUT/eASTROGAMV1.0/Point/theta30/PixelRepli/ASTROMEV/MONO/100MeV/10000ph/onlyCAL/15keV/eAST201010101_CLUSTER_10000ph_Point_MONO_UNI_100MeV_30_225.dat';
 
 %% Load
 
@@ -93,7 +93,7 @@ pres = pfind(pfpar, dtr, evtdb, e0);
 
 % Build the file name form the input file
 [fpath,fname,fext] = fileparts(in_fname);
-out_fname = fullfile([fname '_PFIND_1_1' fext]);
+out_fname = fullfile([fname '_PFIND_1_2' fext]);
 
 fprintf('\nSave results in %s\n', out_fname)
 
